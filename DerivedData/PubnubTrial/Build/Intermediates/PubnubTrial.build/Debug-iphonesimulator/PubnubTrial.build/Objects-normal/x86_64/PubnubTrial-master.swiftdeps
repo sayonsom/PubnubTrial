@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "370bc214957b813495a0523a2a3458d5"
+build_time: [536232584, 777385000]
+inputs:
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/ViewController.swift": [536232565, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AppDelegate.swift": [536197323, 0]

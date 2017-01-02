@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "7d0685bd21eecb6c71eb8f8f830a0a01"
+build_time: [536195539, 341164000]
+inputs:
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubTrialSiriUI/IntentViewController.swift": [536195531, 0]

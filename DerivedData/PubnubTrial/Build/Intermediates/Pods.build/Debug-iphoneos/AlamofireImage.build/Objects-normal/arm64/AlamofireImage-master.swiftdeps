@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "19a2fd557201dcdae80252f10f3b62b9"
+build_time: [536256782, 424589000]
+inputs:
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/AFIError.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/Image.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/ImageCache.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/ImageDownloader.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/ImageFilter.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/Request+AlamofireImage.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/UIButton+AlamofireImage.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/UIImage+AlamofireImage.swift": [536207376, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/UIImageView+AlamofireImage.swift": [536207376, 0]

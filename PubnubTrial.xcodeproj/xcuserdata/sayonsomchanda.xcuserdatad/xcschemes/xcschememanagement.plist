@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PubTrialSiri.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>PubTrialSiriUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>PubnubTrial.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>365762F41E125145006B2589</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3657630B1E125146006B2589</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>365763161E125146006B2589</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>366402021E132CCB0047E683</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3664020B1E132CCB0047E683</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
