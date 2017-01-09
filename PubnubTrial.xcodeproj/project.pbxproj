@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		06E224235726AAA437280D37 /* Pods_PubnubTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0B1DF8064577696EB18E3A /* Pods_PubnubTrial.framework */; };
+		360A6D801E1B129D00A55826 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360A6D7F1E1B129D00A55826 /* HomeKit.framework */; };
+		3614C4221E1EE01500F560DA /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3614C4211E1EE01500F560DA /* AddTaskViewController.swift */; };
+		361D01D51E1EE7F00005D7B8 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361D01D41E1EE7F00005D7B8 /* TaskTableViewController.swift */; };
+		361D01DB1E20666E0005D7B8 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361D01D91E20666E0005D7B8 /* TaskTableViewCell.swift */; };
+		361D01DC1E20666E0005D7B8 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361D01DA1E20666E0005D7B8 /* TaskTableViewCell.xib */; };
+		363945CB1E1C881D000D41AA /* Geotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363945CA1E1C881D000D41AA /* Geotification.swift */; };
+		363945CE1E1CDD31000D41AA /* GeotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363945CC1E1CDD31000D41AA /* GeotificationsViewController.swift */; };
+		363945CF1E1CDD31000D41AA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363945CD1E1CDD31000D41AA /* Utilities.swift */; };
+		363945D11E1CDD67000D41AA /* AddGeotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363945D01E1CDD67000D41AA /* AddGeotificationViewController.swift */; };
 		365762F91E125145006B2589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365762F81E125145006B2589 /* AppDelegate.swift */; };
 		365762FB1E125145006B2589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365762FA1E125145006B2589 /* ViewController.swift */; };
 		365762FE1E125145006B2589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365762FC1E125145006B2589 /* Main.storyboard */; };
@@ -23,6 +32,7 @@
 		366402181E132CCB0047E683 /* PubTrialSiriUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3664020C1E132CCB0047E683 /* PubTrialSiriUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3664021B1E132CCB0047E683 /* PubTrialSiri.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 366402031E132CCB0047E683 /* PubTrialSiri.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		366402241E132E300047E683 /* ManHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366402231E132E300047E683 /* ManHandler.swift */; };
+		3673DD251E222CBE00FB1A00 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3673DD241E222CBE00FB1A00 /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +82,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		360A6D7F1E1B129D00A55826 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		3614C4211E1EE01500F560DA /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		361D01D41E1EE7F00005D7B8 /* TaskTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		361D01D91E20666E0005D7B8 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		361D01DA1E20666E0005D7B8 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		361FC5FA1E12C5D900EA04F3 /* PubnubTrial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PubnubTrial-Bridging-Header.h"; sourceTree = "<group>"; };
+		363945CA1E1C881D000D41AA /* Geotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geotification.swift; sourceTree = "<group>"; };
+		363945CC1E1CDD31000D41AA /* GeotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeotificationsViewController.swift; sourceTree = "<group>"; };
+		363945CD1E1CDD31000D41AA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		363945D01E1CDD67000D41AA /* AddGeotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGeotificationViewController.swift; sourceTree = "<group>"; };
 		365762F51E125145006B2589 /* PubnubTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PubnubTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		365762F81E125145006B2589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		365762FA1E125145006B2589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +116,7 @@
 		366402131E132CCB0047E683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		366402151E132CCB0047E683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		366402231E132E300047E683 /* ManHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManHandler.swift; sourceTree = "<group>"; };
+		3673DD241E222CBE00FB1A00 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts/Charts.framework"; sourceTree = "<group>"; };
 		6B0B1DF8064577696EB18E3A /* Pods_PubnubTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PubnubTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D282F1E0CC08F147CCD86BC /* Pods-PubnubTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubnubTrial.release.xcconfig"; path = "Pods/Target Support Files/Pods-PubnubTrial/Pods-PubnubTrial.release.xcconfig"; sourceTree = "<group>"; };
 		C170E4AEC667181A3EFF000E /* Pods-PubnubTrial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubnubTrial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubnubTrial/Pods-PubnubTrial.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3673DD251E222CBE00FB1A00 /* Charts.framework in Frameworks */,
+				360A6D801E1B129D00A55826 /* HomeKit.framework in Frameworks */,
 				06E224235726AAA437280D37 /* Pods_PubnubTrial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,11 +198,19 @@
 				365762F81E125145006B2589 /* AppDelegate.swift */,
 				361FC5FA1E12C5D900EA04F3 /* PubnubTrial-Bridging-Header.h */,
 				365762FA1E125145006B2589 /* ViewController.swift */,
+				363945D01E1CDD67000D41AA /* AddGeotificationViewController.swift */,
+				363945CC1E1CDD31000D41AA /* GeotificationsViewController.swift */,
+				363945CD1E1CDD31000D41AA /* Utilities.swift */,
+				363945CA1E1C881D000D41AA /* Geotification.swift */,
 				365762FC1E125145006B2589 /* Main.storyboard */,
 				365763021E125145006B2589 /* Assets.xcassets */,
 				365763041E125145006B2589 /* LaunchScreen.storyboard */,
 				365763071E125145006B2589 /* Info.plist */,
 				365762FF1E125145006B2589 /* PubnubTrial.xcdatamodeld */,
+				3614C4211E1EE01500F560DA /* AddTaskViewController.swift */,
+				361D01D41E1EE7F00005D7B8 /* TaskTableViewController.swift */,
+				361D01D91E20666E0005D7B8 /* TaskTableViewCell.swift */,
+				361D01DA1E20666E0005D7B8 /* TaskTableViewCell.xib */,
 			);
 			path = PubnubTrial;
 			sourceTree = "<group>";
@@ -226,6 +256,8 @@
 		AB0194FE54761ABAFDC3F040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3673DD241E222CBE00FB1A00 /* Charts.framework */,
+				360A6D7F1E1B129D00A55826 /* HomeKit.framework */,
 				6B0B1DF8064577696EB18E3A /* Pods_PubnubTrial.framework */,
 				3664020D1E132CCB0047E683 /* IntentsUI.framework */,
 			);
@@ -355,6 +387,12 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 							com.apple.Siri = {
 								enabled = 1;
 							};
@@ -411,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361D01DC1E20666E0005D7B8 /* TaskTableViewCell.xib in Resources */,
 				365763061E125145006B2589 /* LaunchScreen.storyboard in Resources */,
 				365763031E125145006B2589 /* Assets.xcassets in Resources */,
 				365762FE1E125145006B2589 /* Main.storyboard in Resources */,
@@ -501,9 +540,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363945CF1E1CDD31000D41AA /* Utilities.swift in Sources */,
+				3614C4221E1EE01500F560DA /* AddTaskViewController.swift in Sources */,
+				361D01DB1E20666E0005D7B8 /* TaskTableViewCell.swift in Sources */,
 				365763011E125145006B2589 /* PubnubTrial.xcdatamodeld in Sources */,
+				363945CE1E1CDD31000D41AA /* GeotificationsViewController.swift in Sources */,
 				365762FB1E125145006B2589 /* ViewController.swift in Sources */,
 				365762F91E125145006B2589 /* AppDelegate.swift in Sources */,
+				361D01D51E1EE7F00005D7B8 /* TaskTableViewController.swift in Sources */,
+				363945D11E1CDD67000D41AA /* AddGeotificationViewController.swift in Sources */,
+				363945CB1E1C881D000D41AA /* Geotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +740,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PubnubTrial/PubnubTrial.entitlements;
 				DEVELOPMENT_TEAM = 4638P5H7Z3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts",
+				);
 				INFOPLIST_FILE = PubnubTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ailienspace.PubnubTrial;
@@ -711,6 +761,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PubnubTrial/PubnubTrial.entitlements;
 				DEVELOPMENT_TEAM = 4638P5H7Z3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts",
+				);
 				INFOPLIST_FILE = PubnubTrial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ailienspace.PubnubTrial;

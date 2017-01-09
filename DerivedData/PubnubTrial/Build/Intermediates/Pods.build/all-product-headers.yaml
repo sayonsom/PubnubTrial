@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Alamofire-Swift.h",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
         },
         {
           'type': 'file',
@@ -20,23 +20,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Headers",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AlamofireImage-Swift.h",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Headers/AlamofireImage-Swift.h"
         },
         {
           'type': 'file',
@@ -47,18 +47,45 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/AlamofireImage/AlamofireImage.framework/Modules",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphoneos/AlamofireImage.build/module.modulemap"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphonesimulator/AlamofireImage.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Pods_PubnubTrial.framework/Headers",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Charts-Swift.h",
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Headers/Charts-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Charts-umbrella.h",
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/Target Support Files/Charts/Charts-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Charts/Charts.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphonesimulator/Charts.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Pods_PubnubTrial.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -68,24 +95,24 @@
         {
           'type': 'file',
           'name': "Pods_PubnubTrial-Swift.h",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Pods_PubnubTrial.framework/Headers/Pods_PubnubTrial-Swift.h"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Pods_PubnubTrial.framework/Headers/Pods_PubnubTrial-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Pods_PubnubTrial.framework/Modules",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/Pods_PubnubTrial.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-PubnubTrial.build/module.modulemap"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-PubnubTrial.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/PubNub/PubNub.framework/Headers",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/PubNub/PubNub.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -275,7 +302,7 @@
         {
           'type': 'file',
           'name': "PubNub-Swift.h",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/PubNub/PubNub.framework/Headers/PubNub-Swift.h"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/PubNub/PubNub.framework/Headers/PubNub-Swift.h"
         },
         {
           'type': 'file',
@@ -291,18 +318,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/PubNub/PubNub.framework/Modules",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/PubNub/PubNub.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphoneos/PubNub.build/module.modulemap"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphonesimulator/PubNub.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/PubNub/PubNub.framework/PrivateHeaders",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/PubNub/PubNub.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -563,12 +590,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SwiftyJSON-Swift.h",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
         },
         {
           'type': 'file',
@@ -579,12 +606,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework/Modules",
+      'name': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphoneos/SwiftyJSON.build/module.modulemap"
+          'external-contents': "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftyJSON.build/module.modulemap"
         }
       ]
     }

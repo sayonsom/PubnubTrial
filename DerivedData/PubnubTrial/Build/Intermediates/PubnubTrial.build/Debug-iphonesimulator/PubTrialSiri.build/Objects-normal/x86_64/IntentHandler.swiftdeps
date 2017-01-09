@@ -7,8 +7,8 @@ provides-member:
 - ["C12PubTrialSiri13IntentHandler", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "INExtension"
 - "IntentHandler"
+- "INExtension"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

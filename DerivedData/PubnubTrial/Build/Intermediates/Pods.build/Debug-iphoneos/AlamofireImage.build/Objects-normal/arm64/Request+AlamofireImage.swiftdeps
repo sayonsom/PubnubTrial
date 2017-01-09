@@ -9,25 +9,25 @@ provides-member:
 - ["C9Alamofire11DataRequest", "responseImage"]
 provides-dynamic-lookup:
 depends-top-level:
-- "DataResponse"
+- "DataRequest"
 - "BooleanLiteralType"
-- !private "Data"
+- "Array"
 - !private "AFIError"
-- "Bool"
-- !private "AFError"
-- "Void"
-- "DataResponseSerializer"
+- !private "HTTPURLResponse"
+- "Set"
+- !private "Data"
 - "StringLiteralType"
+- "Bool"
+- "DataResponse"
+- !private "UIScreen"
+- "DataResponseSerializer"
+- "String"
+- "Void"
+- !private "AFError"
 - !private "URLRequest"
 - "Image"
-- "DataRequest"
-- !private "UIImage"
-- "Array"
-- "Set"
-- "String"
 - "CGFloat"
-- !private "HTTPURLResponse"
-- !private "UIScreen"
+- !private "UIImage"
 depends-member:
 - !private ["O9Alamofire7AFError", "deinit"]
 - !private ["O9Alamofire7AFError", "responseValidationFailed"]

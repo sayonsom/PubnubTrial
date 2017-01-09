@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "19a2fd557201dcdae80252f10f3b62b9"
-build_time: [536256782, 424589000]
+build_time: [537208971, 569321000]
 inputs:
   "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/AFIError.swift": [536207376, 0]
   "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/AlamofireImage/Source/Image.swift": [536207376, 0]

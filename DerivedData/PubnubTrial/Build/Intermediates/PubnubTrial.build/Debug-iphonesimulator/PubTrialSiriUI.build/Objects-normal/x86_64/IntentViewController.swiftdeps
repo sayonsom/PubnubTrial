@@ -7,17 +7,17 @@ provides-member:
 - ["C14PubTrialSiriUI20IntentViewController", ""]
 provides-dynamic-lookup:
 - "configure"
-- "viewDidLoad"
 - "desiredSize"
+- "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
 - "IntentViewController"
-- "CGSize"
 - "Void"
-- "INInteraction"
+- "CGSize"
 - "UIViewController"
 - "INUIHostedViewContext"
 - "INUIHostedViewControlling"
+- "INInteraction"
 depends-member:
 - ["Ps9AnyObject", "configure"]
 - ["Ps9AnyObject", "configureWithInteraction"]

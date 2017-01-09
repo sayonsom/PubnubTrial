@@ -64,8 +64,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
+        locationManager.distanceFilter = kCLLocationAccuracyNearestTenMeters;
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        
         requestAuthorisation()
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) {(accepted, error) in
+        //UNUserNotificationCenter.current().delegate = delegateObject
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {(accepted, error) in
             if !accepted {
                 print("Notification access denied.")
             }

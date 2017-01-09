@@ -116,13 +116,106 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import UserNotifications;
+@import Foundation;
 @import CoreLocation;
 @import PubNub;
-@import Foundation;
+@import CoreData;
+@import ObjectiveC;
+@import MapKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIBarButtonItem;
+@class UITextField;
+@class UISegmentedControl;
+@class MKMapView;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC11PubnubTrial30AddGeotificationViewController")
+@interface AddGeotificationViewController : UITableViewController
+@property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified addButton;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem * _Null_unspecified zoomButton;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified eventTypeSegmentedControl;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified radiusTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified noteTextField;
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+- (void)viewDidLoad;
+- (IBAction)textFieldEditingChangedWithSender:(UITextField * _Nonnull)sender;
+- (IBAction)onCancelWithSender:(id _Nonnull)sender;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextView;
+@class NSManagedObjectContext;
+@class UISlider;
+@class NSDateFormatter;
+@class UISwitch;
+@class UIButton;
+@class UILabel;
+@class UISearchController;
+@class MKLocalSearchRequest;
+@class MKLocalSearch;
+@class MKLocalSearchResponse;
+@class NSError;
+@class MKPointAnnotation;
+@class MKPinAnnotationView;
+@class UISearchBar;
+@class UIDatePicker;
+
+SWIFT_CLASS("_TtC11PubnubTrial21AddTaskViewController")
+@interface AddTaskViewController : UIViewController <UIBarPositioningDelegate, UISearchBarDelegate, UNUserNotificationCenterDelegate, UIScrollViewDelegate, UITextViewDelegate>
+@property (nonatomic, strong) IBOutlet UITextView * _Null_unspecified taskToAdd;
+@property (nonatomic, readonly, strong) NSManagedObjectContext * _Nonnull context;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified myDatePicker;
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified startDatePicker;
+@property (nonatomic, strong) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, strong) IBOutlet UISlider * _Null_unspecified alarmWillGoOffSlider;
+@property (nonatomic) double alarmOffset;
+@property (nonatomic, readonly, strong) NSDateFormatter * _Nonnull dateFormatter;
+@property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
+@property (nonatomic, strong) IBOutlet UISwitch * _Null_unspecified isVeryImp;
+@property (nonatomic, strong) IBOutlet UISwitch * _Null_unspecified isSecret;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified isFamily;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified alarmLabel;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified isSocial;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified isFun;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified isErrand;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified showSearchBar;
+@property (nonatomic) BOOL Errand;
+@property (nonatomic) BOOL Family;
+@property (nonatomic) BOOL Social;
+@property (nonatomic) BOOL Fun;
+@property (nonatomic, strong) UISearchController * _Null_unspecified searchController;
+@property (nonatomic, strong) MKLocalSearchRequest * _Null_unspecified localSearchRequest;
+@property (nonatomic, strong) MKLocalSearch * _Null_unspecified localSearch;
+@property (nonatomic, strong) MKLocalSearchResponse * _Null_unspecified localSearchResponse;
+@property (nonatomic, strong) NSError * _Null_unspecified error;
+@property (nonatomic, strong) MKPointAnnotation * _Null_unspecified pointAnnotation;
+@property (nonatomic, strong) MKPinAnnotationView * _Null_unspecified pinAnnotationView;
+@property (nonatomic, copy) NSDate * _Nonnull dueDate;
+@property (nonatomic, copy) NSDate * _Nonnull startDate;
+- (IBAction)showSearchBarWithSender:(id _Nonnull)sender;
+- (IBAction)alarmOffsetChanger:(UISlider * _Nonnull)sender;
+- (IBAction)isFamilyButtonWithSender:(UIButton * _Nonnull)sender;
+- (void)searchBarSearchButtonClicked:(UISearchBar * _Nonnull)searchBar;
+- (IBAction)inputStartTaskDate:(UITextField * _Nonnull)sender;
+- (IBAction)inputStartDate:(UITextField * _Nonnull)sender;
+- (BOOL)textView:(UITextView * _Nonnull)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString * _Nonnull)text;
+- (void)GetStartDateWithSender:(UIDatePicker * _Nonnull)sender;
+- (void)GetDeadlineDateWithSender:(UIDatePicker * _Nonnull)sender;
+- (IBAction)AddTask:(id _Nonnull)sender;
+- (void)viewDidLoad;
+- (void)dismissPicker;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class PubNub;
 @class CLLocationManager;
@@ -138,10 +231,12 @@ SWIFT_CLASS("_TtC11PubnubTrial11AppDelegate")
 @property (nonatomic, strong) PubNub * _Null_unspecified client;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull locationManager;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)scheduleNotificationAt:(NSDate * _Nonnull)date;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
 - (void)client:(PubNub * _Nonnull)client didReceiveMessage:(PNMessageResult * _Nonnull)message;
 - (void)client:(PubNub * _Nonnull)client didReceivePresenceEvent:(PNPresenceEventResult * _Nonnull)event;
 - (void)client:(PubNub * _Nonnull)client didReceiveStatus:(PNStatus * _Nonnull)status;
+- (void)application:(UIApplication * _Nonnull)application performFetchWithCompletionHandler:(void (^ _Nonnull)(UIBackgroundFetchResult))completionHandler;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -151,18 +246,209 @@ SWIFT_CLASS("_TtC11PubnubTrial11AppDelegate")
 - (void)saveContext;
 @end
 
+@class NSEntityDescription;
+
+SWIFT_CLASS_NAMED("CurrentEmotion")
+@interface CurrentEmotion : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface CurrentEmotion (SWIFT_EXTENSION(PubnubTrial))
+@property (nonatomic) float awkward;
+@property (nonatomic) float excited;
+@property (nonatomic) float fatigued;
+@property (nonatomic) float indifferent;
+@property (nonatomic) float stressed;
+@property (nonatomic) float uneasy;
+@end
+
+
+SWIFT_CLASS("_TtC11PubnubTrial13Geotification")
+@interface Geotification : NSObject <MKAnnotation, NSCoding>
+@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property (nonatomic) CLLocationDistance radius;
+@property (nonatomic, copy) NSString * _Nonnull identifier;
+@property (nonatomic, copy) NSString * _Nonnull note;
+@property (nonatomic, readonly, copy) NSString * _Nullable title;
+@property (nonatomic, readonly, copy) NSString * _Nullable subtitle;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)decoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)coder;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class UIStoryboardSegue;
+@class CLCircularRegion;
+
+SWIFT_CLASS("_TtC11PubnubTrial28GeotificationsViewController")
+@interface GeotificationsViewController : UIViewController
+@property (nonatomic, weak) IBOutlet MKMapView * _Null_unspecified mapView;
+@property (nonatomic, copy) NSArray<Geotification *> * _Nonnull geotifications;
+@property (nonatomic, strong) CLLocationManager * _Nonnull locationManager;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (void)loadAllGeotifications;
+- (void)saveAllGeotifications;
+- (void)addWithGeotification:(Geotification * _Nonnull)geotification;
+- (void)removeWithGeotification:(Geotification * _Nonnull)geotification;
+- (void)updateGeotificationsCount;
+- (void)addRadiusOverlayForGeotification:(Geotification * _Nonnull)geotification;
+- (void)removeRadiusOverlayForGeotification:(Geotification * _Nonnull)geotification;
+- (IBAction)zoomToCurrentLocationWithSender:(id _Nonnull)sender;
+- (CLCircularRegion * _Nonnull)regionWithGeotification:(Geotification * _Nonnull)geotification;
+- (void)startMonitoringWithGeotification:(Geotification * _Nonnull)geotification;
+- (void)stopMonitoringWithGeotification:(Geotification * _Nonnull)geotification;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface GeotificationsViewController (SWIFT_EXTENSION(PubnubTrial))
+@end
+
+@class CLRegion;
+
+@interface GeotificationsViewController (SWIFT_EXTENSION(PubnubTrial)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager monitoringDidFailForRegion:(CLRegion * _Nullable)region withError:(NSError * _Nonnull)error;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+@end
+
+@class MKAnnotationView;
+@protocol MKOverlay;
+@class MKOverlayRenderer;
+@class UIControl;
+
+@interface GeotificationsViewController (SWIFT_EXTENSION(PubnubTrial)) <MKMapViewDelegate>
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation;
+- (MKOverlayRenderer * _Nonnull)mapView:(MKMapView * _Nonnull)mapView rendererForOverlay:(id <MKOverlay> _Nonnull)overlay;
+- (void)mapView:(MKMapView * _Nonnull)mapView annotationView:(MKAnnotationView * _Nonnull)view calloutAccessoryControlTapped:(UIControl * _Nonnull)control;
+@end
+
+
+SWIFT_CLASS_NAMED("LifeFeelings")
+@interface LifeFeelings : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface LifeFeelings (SWIFT_EXTENSION(PubnubTrial))
+@end
+
+
+@interface MKMapView (SWIFT_EXTENSION(PubnubTrial))
+- (void)zoomToUserLocation;
+@end
+
+
+SWIFT_CLASS_NAMED("Person")
+@interface Person : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDate;
+
+@interface Person (SWIFT_EXTENSION(PubnubTrial))
+@property (nonatomic, strong) NSDate * _Nullable anniversary;
+@property (nonatomic, strong) NSDate * _Nullable birthday;
+@property (nonatomic, strong) NSObject * _Nullable homeaddress;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, strong) NSObject * _Nullable photo;
+@property (nonatomic, strong) NSObject * _Nullable workaddress;
+@end
+
+
+SWIFT_CLASS_NAMED("Task")
+@interface Task : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Task (SWIFT_EXTENSION(PubnubTrial))
+@property (nonatomic, strong) NSDate * _Nullable dueDate;
+@property (nonatomic) BOOL isErrand;
+@property (nonatomic) BOOL isFamily;
+@property (nonatomic) BOOL isFun;
+@property (nonatomic) BOOL isImportant;
+@property (nonatomic) BOOL isSecret;
+@property (nonatomic) BOOL isSocial;
+@property (nonatomic, copy) NSString * _Nullable mood;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, strong) NSDate * _Nullable startDate;
+@property (nonatomic, strong) NSObject * _Nullable taskLocation;
+@end
+
+
+SWIFT_CLASS("_TtC11PubnubTrial17TaskTableViewCell")
+@interface TaskTableViewCell : UITableViewCell
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified typeOfMood;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified dayOfEndDate;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified monthOfEndDate;
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified taskName;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class PNConfiguration;
-@class UIButton;
-@class UISlider;
+@class PieChartView;
+@class UITableView;
+
+SWIFT_CLASS("_TtC11PubnubTrial23TaskTableViewController")
+@interface TaskTableViewController : UITableViewController
+@property (nonatomic, strong) PNConfiguration * _Nonnull summaryconfiguration;
+@property (nonatomic, strong) PubNub * _Null_unspecified SummaryClient;
+@property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
+@property (nonatomic, strong) NSDateFormatter * _Nonnull dateFormatter;
+@property (nonatomic, copy) NSDate * _Nonnull todaysDate;
+@property (nonatomic, strong) IBOutlet PieChartView * _Null_unspecified pieChartView;
+@property (nonatomic, copy) NSArray<Task *> * _Nonnull tasks;
+@property (nonatomic, copy) NSArray<NSString *> * _Null_unspecified feelings;
+- (void)setChartWithDataPoints:(NSArray<NSString *> * _Nonnull)dataPoints values:(NSArray<NSNumber *> * _Nonnull)values;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canMoveRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView moveRowAtIndexPath:(NSIndexPath * _Nonnull)sourceIndexPath toIndexPath:(NSIndexPath * _Nonnull)destinationIndexPath;
+- (NSDictionary<NSString *, id> * _Nonnull)JSONParseDictionaryWithString:(NSString * _Nonnull)string;
+- (void)getData;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIToolbar (SWIFT_EXTENSION(PubnubTrial))
+- (UIToolbar * _Nonnull)ToolbarPikerWithMySelect:(SEL _Nonnull)mySelect;
+@end
+
+
+@interface UIViewController (SWIFT_EXTENSION(PubnubTrial))
+- (void)showAlertWithTitle:(NSString * _Nullable)title message:(NSString * _Nullable)message;
+@end
+
 @class NSTimer;
-@class UITextField;
-@class UILabel;
+@class UIStepper;
 @class CLLocation;
-@class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC11PubnubTrial14ViewController")
 @interface ViewController : UIViewController <CLLocationManagerDelegate, PNObjectEventListener>
+@property (nonatomic) double Creative;
+@property (nonatomic) double Happy;
+@property (nonatomic) double Content;
+@property (nonatomic) double Motivated;
+@property (nonatomic) double NegativeFeelings;
+@property (nonatomic) double Uneasy;
+@property (nonatomic) double Excited;
+@property (nonatomic) double Awkward;
+@property (nonatomic) double Fatigue;
+@property (nonatomic) double Indifferent;
+@property (nonatomic) double Focused;
+@property (nonatomic) double Stressed;
 @property (nonatomic, strong) PNConfiguration * _Nonnull foodconfiguration;
 @property (nonatomic, strong) PNConfiguration * _Nonnull coffeeconfiguration;
 @property (nonatomic, strong) PNConfiguration * _Nonnull workconfiguration;
@@ -199,6 +485,15 @@ SWIFT_CLASS("_TtC11PubnubTrial14ViewController")
 - (IBAction)workInterestLevelChange:(id _Nonnull)sender;
 - (IBAction)freshnessLevelChange:(id _Nonnull)sender;
 - (IBAction)motivationLevelChange:(id _Nonnull)sender;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified badSocialInteraction;
+- (IBAction)badSocialInteraction:(id _Nonnull)sender;
+- (IBAction)goodSocialInteraction:(id _Nonnull)sender;
+- (IBAction)workOut:(id _Nonnull)sender;
+- (IBAction)actOfKindness:(id _Nonnull)sender;
+@property (nonatomic, strong) IBOutlet UIStepper * _Null_unspecified errandsValue;
+- (IBAction)errandsChange:(id _Nonnull)sender;
+- (void)fetch:(SWIFT_NOESCAPE void (^ _Nonnull)(void))completion;
+- (void)updateUI;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull message;
 @property (nonatomic, readonly, strong) CLLocationManager * _Nonnull manager;
 @property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified pubText;
@@ -207,13 +502,12 @@ SWIFT_CLASS("_TtC11PubnubTrial14ViewController")
 - (NSDictionary<NSString *, id> * _Nonnull)JSONParseDictionaryWithString:(NSString * _Nonnull)string;
 - (void)viewDidLoad;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)setupData;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
 - (void)updateMySpeed;
 - (void)updateMyHunger;
 - (void)updateMyCoffee;
-- (void)updateMyLife;
-- (void)updateMyWork;
-- (void)updateMyBody;
-- (void)updateMySummary;
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;

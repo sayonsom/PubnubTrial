@@ -1,6 +1,16 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "817eaa62f88ba893358aa52b1525bbab"
-build_time: [536364372, 160267000]
+options: "318e7bbb3469a7e2cd110cda4babb600"
+build_time: [537208978, 925816000]
 inputs:
-  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/ViewController.swift": [536259686, 0]
-  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AppDelegate.swift": [536259297, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/Utilities.swift": [523477390, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AddTaskViewController.swift": [537175163, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/TaskTableViewCell.swift": [537093087, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/GeotificationsViewController.swift": [527040128, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/ViewController.swift": [536975387, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AppDelegate.swift": [536833139, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/TaskTableViewController.swift": [537183622, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AddGeotificationViewController.swift": [523475944, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/Geotification.swift": [536808747, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphoneos/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/Task+CoreDataClass.swift": [537178665, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphoneos/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/Task+CoreDataProperties.swift": [537178665, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphoneos/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/PubnubTrial+CoreDataModel.swift": [537178665, 0]

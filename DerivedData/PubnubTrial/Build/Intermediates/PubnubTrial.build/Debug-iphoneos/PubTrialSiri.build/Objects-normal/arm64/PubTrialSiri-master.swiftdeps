@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "a9551ac63792234c1fa194c55b51e39e"
-build_time: [536195889, 557284000]
+build_time: [537178617, 820837000]
 inputs:
   "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubTrialSiri/IntentHandler.swift": [536195889, 0]
   "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubTrialSiri/ManHandler.swift": [536195887, 0]

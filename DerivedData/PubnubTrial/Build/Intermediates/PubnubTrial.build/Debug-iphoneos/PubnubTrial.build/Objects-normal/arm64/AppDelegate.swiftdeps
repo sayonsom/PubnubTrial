@@ -6,69 +6,71 @@ provides-nominal:
 provides-member:
 - ["C11PubnubTrial11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "locationManager"
 - "applicationWillResignActive"
-- "applicationWillTerminate"
-- "client"
-- "client"
-- "client"
-- "client"
-- "saveContext"
-- "applicationDidBecomeActive"
-- "persistentContainer"
-- "scheduleNotification"
-- "applicationWillEnterForeground"
 - "window"
+- "applicationDidEnterBackground"
+- "persistentContainer"
+- "saveContext"
+- "locationManager"
+- "client"
+- "client"
+- "client"
+- "client"
+- "applicationWillEnterForeground"
+- "applicationDidBecomeActive"
 - "application"
 - "application"
+- "scheduleNotification"
+- "applicationWillTerminate"
 depends-top-level:
-- "CLLocationManagerDelegate"
-- !private "BooleanLiteralType"
-- "UIResponder"
-- !private "||"
-- !private "PNErrorStatus"
-- !private "UnicodeScalarType"
-- !private "NSError"
-- "UIApplicationLaunchOptionsKey"
-- "UIWindow"
-- "AppDelegate"
-- !private "UNCalendarNotificationTrigger"
-- !private "UITabBarController"
-- "PubNub"
-- !private "Array"
-- "CLLocationManager"
-- "AssignmentPrecedence"
-- "PNObjectEventListener"
-- !private "=="
-- "CastingPrecedence"
-- !private "print"
-- "Date"
-- "PNPresenceEventResult"
-- !private "UNNotificationSound"
-- !private "StringLiteralType"
-- !private "UNUserNotificationCenter"
 - !private "DateComponents"
+- !private "kCLLocationAccuracyNearestTenMeters"
 - !private "UNMutableNotificationContent"
 - "UIApplicationDelegate"
-- !private "+"
-- !private "INPreferences"
-- "PNStatus"
+- !private "UNUserNotificationCenter"
 - !private "PNConfiguration"
-- !private "ViewController"
-- !private "fatalError"
-- !private "!="
-- !private "!"
+- "UIResponder"
+- "PubNub"
+- "Date"
+- !private "INPreferences"
+- !private "NSError"
+- !private "StringLiteralType"
 - "UIApplication"
-- !private "Calendar"
-- !private "UIApplicationBackgroundFetchIntervalMinimum"
-- "PNMessageResult"
 - !private "PNSubscribeStatus"
+- !private "BooleanLiteralType"
+- !private "UITabBarController"
+- !private "!"
+- !private "PNErrorStatus"
+- !private "||"
+- !private "!="
+- !private "+"
+- !private "UNNotificationSound"
+- "PNObjectEventListener"
 - "UIBackgroundFetchResult"
 - "Bool"
-- "Void"
+- "AppDelegate"
+- !private "kCLLocationAccuracyBest"
+- !private "UnicodeScalarType"
+- !private "Calendar"
 - "NSPersistentContainer"
+- !private "fatalError"
+- "PNStatus"
+- "AssignmentPrecedence"
+- !private "=="
+- "PNMessageResult"
+- "CLLocationManager"
+- "CastingPrecedence"
+- "UIApplicationLaunchOptionsKey"
+- "PNPresenceEventResult"
+- "CLLocationManagerDelegate"
+- !private "Array"
+- "Void"
+- "UIWindow"
 - !private "UNNotificationRequest"
+- !private "ViewController"
+- !private "print"
+- !private "UIApplicationBackgroundFetchIntervalMinimum"
+- !private "UNCalendarNotificationTrigger"
 depends-member:
 - ["Ps9AnyObject", "CLLocationManager"]
 - !private ["Ps9AnyObject", "Calendar"]
@@ -106,11 +108,15 @@ depends-member:
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "default"]
 - !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "desiredAccuracy"]
+- !private ["Ps9AnyObject", "distanceFilter"]
 - !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "fetch"]
 - !private ["Ps9AnyObject", "hasChanges"]
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isError"]
+- !private ["Ps9AnyObject", "kCLLocationAccuracyBest"]
+- !private ["Ps9AnyObject", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9AnyObject", "loadPersistentStores"]
 - ["Ps9AnyObject", "locationManager"]
 - ["Ps9AnyObject", "locationManagerDidPauseLocationUpdates"]
@@ -193,6 +199,8 @@ depends-member:
 - ["C11PubnubTrial11AppDelegate", "deinit"]
 - !private ["C11PubnubTrial11AppDelegate", "fatalError"]
 - ["C11PubnubTrial11AppDelegate", "init"]
+- !private ["C11PubnubTrial11AppDelegate", "kCLLocationAccuracyBest"]
+- !private ["C11PubnubTrial11AppDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - ["C11PubnubTrial11AppDelegate", "locationManager"]
 - ["C11PubnubTrial11AppDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["C11PubnubTrial11AppDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -222,6 +230,8 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "rootViewController"]
 - ["CSo17CLLocationManager", "deinit"]
 - !private ["CSo17CLLocationManager", "delegate"]
+- !private ["CSo17CLLocationManager", "desiredAccuracy"]
+- !private ["CSo17CLLocationManager", "distanceFilter"]
 - ["CSo17CLLocationManager", "init"]
 - !private ["CSo17CLLocationManager", "requestAlwaysAuthorization"]
 - ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
@@ -253,6 +263,8 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "client"]
 - !private ["PSo25CLLocationManagerDelegate", "fatalError"]
 - !private ["PSo25CLLocationManagerDelegate", "fetch"]
+- !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyBest"]
+- !private ["PSo25CLLocationManagerDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - ["PSo25CLLocationManagerDelegate", "locationManager"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -303,11 +315,15 @@ depends-member:
 - !private ["Ps7CVarArg", "data"]
 - !private ["Ps7CVarArg", "default"]
 - !private ["Ps7CVarArg", "delegate"]
+- !private ["Ps7CVarArg", "desiredAccuracy"]
+- !private ["Ps7CVarArg", "distanceFilter"]
 - !private ["Ps7CVarArg", "fatalError"]
 - !private ["Ps7CVarArg", "fetch"]
 - !private ["Ps7CVarArg", "hasChanges"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "isError"]
+- !private ["Ps7CVarArg", "kCLLocationAccuracyBest"]
+- !private ["Ps7CVarArg", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps7CVarArg", "last"]
 - !private ["Ps7CVarArg", "loadPersistentStores"]
 - ["Ps7CVarArg", "locationManager"]
@@ -397,12 +413,16 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "day"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "desiredAccuracy"]
+- !private ["Ps28CustomDebugStringConvertible", "distanceFilter"]
 - !private ["Ps28CustomDebugStringConvertible", "fatalError"]
 - !private ["Ps28CustomDebugStringConvertible", "fetch"]
 - !private ["Ps28CustomDebugStringConvertible", "hasChanges"]
 - !private ["Ps28CustomDebugStringConvertible", "hour"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "isError"]
+- !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyBest"]
+- !private ["Ps28CustomDebugStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps28CustomDebugStringConvertible", "last"]
 - !private ["Ps28CustomDebugStringConvertible", "loadPersistentStores"]
 - ["Ps28CustomDebugStringConvertible", "locationManager"]
@@ -500,12 +520,16 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "day"]
 - !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "desiredAccuracy"]
+- !private ["Ps23CustomStringConvertible", "distanceFilter"]
 - !private ["Ps23CustomStringConvertible", "fatalError"]
 - !private ["Ps23CustomStringConvertible", "fetch"]
 - !private ["Ps23CustomStringConvertible", "hasChanges"]
 - !private ["Ps23CustomStringConvertible", "hour"]
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "isError"]
+- !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyBest"]
+- !private ["Ps23CustomStringConvertible", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps23CustomStringConvertible", "last"]
 - !private ["Ps23CustomStringConvertible", "loadPersistentStores"]
 - ["Ps23CustomStringConvertible", "locationManager"]
@@ -603,6 +627,8 @@ depends-member:
 - !private ["Ps9Equatable", "day"]
 - !private ["Ps9Equatable", "default"]
 - !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "desiredAccuracy"]
+- !private ["Ps9Equatable", "distanceFilter"]
 - !private ["Ps9Equatable", "fatalError"]
 - !private ["Ps9Equatable", "fetch"]
 - !private ["Ps9Equatable", "gregorian"]
@@ -610,6 +636,8 @@ depends-member:
 - !private ["Ps9Equatable", "hour"]
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "isError"]
+- !private ["Ps9Equatable", "kCLLocationAccuracyBest"]
+- !private ["Ps9Equatable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9Equatable", "loadPersistentStores"]
 - ["Ps9Equatable", "locationManager"]
 - ["Ps9Equatable", "locationManagerDidPauseLocationUpdates"]
@@ -712,6 +740,8 @@ depends-member:
 - !private ["Ps8Hashable", "day"]
 - !private ["Ps8Hashable", "default"]
 - !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "desiredAccuracy"]
+- !private ["Ps8Hashable", "distanceFilter"]
 - !private ["Ps8Hashable", "fatalError"]
 - !private ["Ps8Hashable", "fetch"]
 - !private ["Ps8Hashable", "gregorian"]
@@ -719,6 +749,8 @@ depends-member:
 - !private ["Ps8Hashable", "hour"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "isError"]
+- !private ["Ps8Hashable", "kCLLocationAccuracyBest"]
+- !private ["Ps8Hashable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps8Hashable", "loadPersistentStores"]
 - ["Ps8Hashable", "locationManager"]
 - ["Ps8Hashable", "locationManagerDidPauseLocationUpdates"]
@@ -877,11 +909,15 @@ depends-member:
 - !private ["CSo8NSObject", "data"]
 - !private ["CSo8NSObject", "default"]
 - !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "desiredAccuracy"]
+- !private ["CSo8NSObject", "distanceFilter"]
 - !private ["CSo8NSObject", "fatalError"]
 - !private ["CSo8NSObject", "fetch"]
 - !private ["CSo8NSObject", "hasChanges"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isError"]
+- !private ["CSo8NSObject", "kCLLocationAccuracyBest"]
+- !private ["CSo8NSObject", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["CSo8NSObject", "loadPersistentStores"]
 - ["CSo8NSObject", "locationManager"]
 - ["CSo8NSObject", "locationManagerDidPauseLocationUpdates"]
@@ -955,11 +991,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "data"]
 - !private ["PSo16NSObjectProtocol", "default"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
+- !private ["PSo16NSObjectProtocol", "distanceFilter"]
 - !private ["PSo16NSObjectProtocol", "fatalError"]
 - !private ["PSo16NSObjectProtocol", "fetch"]
 - !private ["PSo16NSObjectProtocol", "hasChanges"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isError"]
+- !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyBest"]
+- !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["PSo16NSObjectProtocol", "loadPersistentStores"]
 - ["PSo16NSObjectProtocol", "locationManager"]
 - ["PSo16NSObjectProtocol", "locationManagerDidPauseLocationUpdates"]
@@ -1057,6 +1097,8 @@ depends-member:
 - ["PSo21PNObjectEventListener", "client"]
 - !private ["PSo21PNObjectEventListener", "fatalError"]
 - !private ["PSo21PNObjectEventListener", "fetch"]
+- !private ["PSo21PNObjectEventListener", "kCLLocationAccuracyBest"]
+- !private ["PSo21PNObjectEventListener", "kCLLocationAccuracyNearestTenMeters"]
 - ["PSo21PNObjectEventListener", "locationManager"]
 - ["PSo21PNObjectEventListener", "locationManagerDidPauseLocationUpdates"]
 - ["PSo21PNObjectEventListener", "locationManagerDidResumeLocationUpdates"]
@@ -1211,6 +1253,8 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - ["PSo21UIApplicationDelegate", "client"]
 - !private ["PSo21UIApplicationDelegate", "fatalError"]
+- !private ["PSo21UIApplicationDelegate", "kCLLocationAccuracyBest"]
+- !private ["PSo21UIApplicationDelegate", "kCLLocationAccuracyNearestTenMeters"]
 - ["PSo21UIApplicationDelegate", "locationManager"]
 - ["PSo21UIApplicationDelegate", "locationManagerDidPauseLocationUpdates"]
 - ["PSo21UIApplicationDelegate", "locationManagerDidResumeLocationUpdates"]
@@ -1278,6 +1322,8 @@ depends-member:
 - !private ["CSo11UIResponder", "fatalError"]
 - !private ["CSo11UIResponder", "fetch"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "kCLLocationAccuracyBest"]
+- !private ["CSo11UIResponder", "kCLLocationAccuracyNearestTenMeters"]
 - ["CSo11UIResponder", "locationManager"]
 - ["CSo11UIResponder", "locationManagerDidPauseLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
@@ -1325,6 +1371,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "fatalError"]
 - !private ["PSo30UIResponderStandardEditActions", "fetch"]
 - ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyBest"]
+- !private ["PSo30UIResponderStandardEditActions", "kCLLocationAccuracyNearestTenMeters"]
 - ["PSo30UIResponderStandardEditActions", "locationManager"]
 - ["PSo30UIResponderStandardEditActions", "locationManagerDidPauseLocationUpdates"]
 - ["PSo30UIResponderStandardEditActions", "locationManagerDidResumeLocationUpdates"]
@@ -1452,6 +1500,8 @@ depends-member:
 - !private ["Ps9_Hashable", "day"]
 - !private ["Ps9_Hashable", "default"]
 - !private ["Ps9_Hashable", "delegate"]
+- !private ["Ps9_Hashable", "desiredAccuracy"]
+- !private ["Ps9_Hashable", "distanceFilter"]
 - !private ["Ps9_Hashable", "fatalError"]
 - !private ["Ps9_Hashable", "fetch"]
 - !private ["Ps9_Hashable", "gregorian"]
@@ -1459,6 +1509,8 @@ depends-member:
 - !private ["Ps9_Hashable", "hour"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "isError"]
+- !private ["Ps9_Hashable", "kCLLocationAccuracyBest"]
+- !private ["Ps9_Hashable", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["Ps9_Hashable", "loadPersistentStores"]
 - ["Ps9_Hashable", "locationManager"]
 - ["Ps9_Hashable", "locationManagerDidPauseLocationUpdates"]
@@ -1717,7 +1769,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Intents.swiftmodule"
+- "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts/Charts.framework/Modules/Charts.swiftmodule/arm64.swiftmodule"
+- "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-Swift.h"
+- "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts/Charts.framework/Headers/Charts-umbrella.h"
+- "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Products/Debug-iphoneos/Charts/Charts.framework/Modules/module.modulemap"
 interface-hash: "ea60b315d4f4c6c6b9f6417b569470b8"

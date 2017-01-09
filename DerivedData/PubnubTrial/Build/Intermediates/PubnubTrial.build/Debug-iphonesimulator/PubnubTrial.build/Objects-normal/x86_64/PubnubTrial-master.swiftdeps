@@ -1,6 +1,22 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "370bc214957b813495a0523a2a3458d5"
-build_time: [536232584, 777385000]
+options: "734122880819eb60500c5c8911c3086d"
+build_time: [537268532, 743111000]
 inputs:
-  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/ViewController.swift": [536232565, 0]
-  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AppDelegate.swift": [536197323, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/Utilities.swift": [523477390, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AddTaskViewController.swift": [537268531, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/TaskTableViewCell.swift": [537093087, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/GeotificationsViewController.swift": [527040128, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/ViewController.swift": [536975387, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AppDelegate.swift": [537265476, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/TaskTableViewController.swift": [537222493, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/AddGeotificationViewController.swift": [523475944, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/PubnubTrial/Geotification.swift": [536808747, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/CurrentEmotion+CoreDataClass.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/CurrentEmotion+CoreDataProperties.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/LifeFeelings+CoreDataClass.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/LifeFeelings+CoreDataProperties.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/Person+CoreDataClass.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/Person+CoreDataProperties.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/Task+CoreDataClass.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/Task+CoreDataProperties.swift": [537238411, 0]
+  "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/DerivedData/PubnubTrial/Build/Intermediates/PubnubTrial.build/Debug-iphonesimulator/PubnubTrial.build/DerivedSources/CoreDataGenerated/PubnubTrial/PubnubTrial+CoreDataModel.swift": [537238411, 0]

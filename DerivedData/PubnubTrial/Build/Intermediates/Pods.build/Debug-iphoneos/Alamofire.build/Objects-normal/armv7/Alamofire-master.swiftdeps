@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "2a0274a0dfff27e0a949767010759331"
-build_time: [536256774, 156668000]
+build_time: [537208924, 609971000]
 inputs:
   "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/Alamofire/Source/AFError.swift": [536207376, 0]
   "/Users/sayonsomchanda/Documents/Apps/PubnubTrial/Pods/Alamofire/Source/Alamofire.swift": [536207376, 0]

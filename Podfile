@@ -15,5 +15,5 @@ pod 'PubNub', '~> 4'
 pod 'Alamofire', '~> 4.0'
 pod 'AlamofireImage'
 pod 'SwiftyJSON'
-
+pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git'
 end

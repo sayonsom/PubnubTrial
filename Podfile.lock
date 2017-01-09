@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.0.0)
   - AlamofireImage (3.0.0):
     - Alamofire (~> 4.0)
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
   - PubNub (4.5.2):
     - PubNub/Core (= 4.5.2)
   - PubNub/Core (4.5.2)
@@ -10,15 +13,26 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - AlamofireImage
+  - Charts (from `https://github.com/danielgindi/Charts.git`)
   - PubNub (~> 4)
   - SwiftyJSON
+
+EXTERNAL SOURCES:
+  Charts:
+    :git: https://github.com/danielgindi/Charts.git
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: 3fe38177b3e351f6b2ebc177aea803996914c7f2
+    :git: https://github.com/danielgindi/Charts.git
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
   AlamofireImage: 6594aa1139a67dcd36cde6da79ea4e5b318e60fb
+  Charts: e1c22ca0f52867fadf8ee16ff723dfb0b464eb91
   PubNub: 1b6da1bb6a971214ab9fb42e40aed23f77438d26
   SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
 
-PODFILE CHECKSUM: '02796e6787f68b6be1b1e707793541bee1f49163'
+PODFILE CHECKSUM: dcd669cddde2b20f421f155085bf217d0147d080
 
 COCOAPODS: 1.2.0.beta.1
